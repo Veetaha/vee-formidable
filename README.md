@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/vee-formidable.svg)](https://badge.fury.io/js/vee-formidable)
 
 
-It is a nice ExpressJS middleware for 'formidable' library. 
+This is a nice ExpressJS middleware for 'formidable' library. 
 
 Written in TypeScript, declaration files are available by default.
 
