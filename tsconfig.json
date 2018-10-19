@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    /* Basic Options */
+    "outDir": "build",
+    "lib": ["esnext", "esnext.array", "es2015", "es2015.core"],
+    "target": "esnext",
+    "module": "commonjs",
+    "typeRoots": [
+      "declarations",
+      "node_modules/@types"
+    ],
+    "sourceMap":      true,
+    "declaration":    true, /* Generates corresponding '.d.ts' file. */
+    "declarationMap": true, /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    "experimentalDecorators":     true,
+    "strict":                     true,
+    "noUnusedLocals":             true,
+    "noUnusedParameters":         true,
+    "noImplicitAny":              true,
+    "noImplicitThis":             true,
+    "noImplicitReturns":          true,
+    "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
+    /* Module Resolution Options */
+    "moduleResolution": "node"
+//    "skipLibCheck": true
+  },
+  "files": ["veetaha.ts", "./dev/publish.ts"],
+  "include": [
+    "./**/*"
+  ],
+  "exclude": ["node_modules/**/*", "build"]
+}

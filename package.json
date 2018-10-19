@@ -1,0 +1,25 @@
+{
+    "name": "vee-formidable",
+    "version": "1.0.1",
+    "description": "Formidable library ExpressJS middleware wrapper.",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "repository": {
+        "type": "git",
+        "link": "https://github.com/Veetaha/vee-formidable"
+    },
+    "scripts": {
+        "test": "echo 'No tests =('"
+    },
+    "author": "Vitaliy Kryvenko",
+    "license": "MIT",
+    "dependencies": {
+        "formidable": "latest",
+        "@types/formidable": "latest",
+        "@types/express": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "latest",
+        "typescript": "latest"
+    }
+}
