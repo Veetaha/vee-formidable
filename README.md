@@ -11,7 +11,7 @@ Written in TypeScript, declaration files are available by default.
 This package exports a single object with a single field `makeMiddleware` containing a function described bellow.
 
 #### makeMiddleware(options?: FormidableOptions)
-Accepts one **optional** argument of type `FormiddableOptions`, which is `Object.assign`ed to the original `formidable.IncommingForm`. See [formidable API](https://www.npmjs.com/package/formidable) for an up-to-date reference.
+Accepts one **optional** argument of type `FormidableOptions`, which is `Object.assign`ed to the original `formidable.IncommingForm`. See [formidable API](https://www.npmjs.com/package/formidable) for an up-to-date reference.
 
 *TypeScript example*
 ~~~typescript
