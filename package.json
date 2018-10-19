@@ -1,6 +1,6 @@
 {
     "name": "vee-formidable",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Formidable library ExpressJS middleware wrapper.",
     "main": "build/index.js",
     "types": "build/index.d.ts",

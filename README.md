@@ -13,6 +13,17 @@ This package exports a single object with a single field `makeMiddleware` contai
 #### makeMiddleware(options?: FormidableOptions)
 Accepts one **optional** argument of type `FormidableOptions`, which is `Object.assign`ed to the original `formidable.IncommingForm`. See [formidable API](https://www.npmjs.com/package/formidable) for an up-to-date reference.
 
+  After applying this middleware, you can utilize `req.fields` as an object, with each key being the name of the form input and its corresponding value which is of type `string | string[]`. 
+  
+  
+  All files send by the form are stored in a directory specified as `uploadDir` option, which is `os.tmpdir()` by default. 
+  Information about forwarded files is available as `req.files`. 
+  It is an object with keys of form input
+   names and values of `formidable.File | formidable.File[]`  type (see
+    ['@types/formidable'](https://www.npmjs.com/package/@types/express-formidable)  declaration file for precise info). 
+  
+  
+
 *TypeScript example*
 ~~~typescript
 import * as express from 'express';
@@ -24,8 +35,11 @@ app.use(formParser.makeMiddleware({
     uploadDir: 'data/form-files'
 }));
 
-app.use('/', (req, res, next) => {
-   res.send('Index route'); 
+app.post('/entity/new', (req, res, next) => {
+    console.log(
+        `Form fields: ${req.fields}`, 
+        `Form files: ${req.files}`
+    );
 });
 ~~~
 
@@ -41,8 +55,11 @@ app.use(formParser.makeMiddleware({
     uploadDir: 'data/form-files'
 }));
 
-app.use('/', (req, res, next) => {
-   res.send('Index route'); 
+app.post('/entity/new', (req, res, next) => {
+    console.log(
+        `Form fields: ${req.fields}`, 
+        `Form files: ${req.files}`
+    );
 });
 ~~~
 
