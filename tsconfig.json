@@ -7,7 +7,6 @@
     "target": "esnext",
     "module": "commonjs",
     "typeRoots": [
-      "declarations",
       "node_modules/@types"
     ],
     "sourceMap":      true,
@@ -25,7 +24,7 @@
     "moduleResolution": "node"
 //    "skipLibCheck": true
   },
-  "files": ["veetaha.ts", "./dev/publish.ts"],
+  "files": ["index.ts"],
   "include": [
     "./**/*"
   ],
