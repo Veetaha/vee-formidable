@@ -1,13 +1,13 @@
 {
     "name": "vee-formidable",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Formidable library ExpressJS middleware wrapper.",
     "main": "build/index.js",
     "types": "build/index.d.ts",
     "keywords": ["middleware", "express", "formidable"],
     "repository": {
         "type": "git",
-        "link": "https://github.com/Veetaha/vee-formidable"
+        "link": "https://github.com/Veetaha/vee-formidable.git"
     },
     "scripts": {
         "test": "echo 'No tests =('"
