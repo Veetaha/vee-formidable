@@ -4,7 +4,7 @@
 
 This is a simple ExpressJS middleware which wraps ['formidable'](https://www.npmjs.com/package/formidable) `IncommingForm`. 
 
-It is written TypeScript, declaration file is available by default.
+It is written in TypeScript, declaration file is available by default.
 
 ### API
 
