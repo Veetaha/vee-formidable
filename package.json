@@ -7,7 +7,7 @@
     "keywords": ["middleware", "express", "formidable"],
     "repository": {
         "type": "git",
-        "link": "https://github.com/Veetaha/vee-formidable.git"
+        "url": "https://github.com/Veetaha/vee-formidable.git"
     },
     "scripts": {
         "test": "echo 'No tests =('"
