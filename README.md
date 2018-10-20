@@ -64,6 +64,6 @@ app.post('/entity/new', (req, res, next) => {
 
 **Credits**
 
-This middleware is a problem fixed and rewritten to TypeScript ['express-formidable']('https://www.npmjs.com/package/express-formidable') npm package.
+This middleware is a problem fixed and rewritten to TypeScript ['express-formidable'](https://www.npmjs.com/package/express-formidable) npm package.
 
 Type declaration file is based on ['@types/express-formidable'](https://www.npmjs.com/package/@types/express-formidable) npm package.
